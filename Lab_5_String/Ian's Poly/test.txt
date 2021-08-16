@@ -1,0 +1,52 @@
+TESTING METHOD FOR POLYNOMIAL PROGRAM
+
+POSITIVE TESTS:
+1. Assign 4x^2
+Report: Works
+2. Add 3x^4
+Report: Works
+3. View the polynomial
+Report: Works
+4. Change polynomial to B
+Report: Works, outputs 0 as expected
+5. Evaluate at x = 5
+Report: Works, outputs 1975 as expected
+6. Assign 5x^3 to B, view A + B
+Report: Works, outputs 3x^4 + 5x^3 + 4x^2 as expected
+7. View A - B
+Report: Works, outputs 3x^4 - 5x^3 + 4x^2 as expected
+8. Set A = 2x^2, set B = 4x^3, view A * B
+Report: Works, outputs 8x^5 as expected
+9. View next and previous term for A @ degree = 3
+Report: Works
+10. View derivative of A
+Report: Works, outputs 4x as expected
+11. Clear A and B
+Report: Works, both polynomials are set to 0 as expected
+12. Assign 2x^2 and then add 2x^2
+Report: Works, outputs 4x^2 as expected
+13. Assign 5x^2 while 4x^2 already exists
+Report: Works, outputs 5x^2 as expected
+
+NEGATIVE TESTS:
+1. Set polynomial to work on as D
+Report: Works, does not allow setting to polynomial D as expected
+2. Assign new term with degree = 30
+Report: Assertion fails as expected
+3. Assign new term with degree = -5
+Report: Assertion fails as expected
+4. View derivative of 0
+Report: Outputs 0 as expected
+5. Evaluate 0 @ x = 5
+Report: Outputs 0 as expected
+
+BOUNDARY TESTS:
+1. Set coefficient to 9007199254740992 (max value of double with precision)
+Report: Works
+2. Set coefficient to 9007199254740993
+Report: Outputs 9007199254740992.0 instead of 9007199254740993.0 as expected
+(NOTE: using 9007199254740995 outputs 9007199254740996.0)
+3. Fill the polynomial from degree 1 to degree 29
+Report: Does not add item of degree 29 NOT EXPECTED
+4. Assign item with degree 29
+Report: Does not add item of degree 29 NOT EXPECTED

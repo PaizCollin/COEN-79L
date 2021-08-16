@@ -1,0 +1,49 @@
+void erase()
+    positive: give it a bag with an item in it. this results in an empty bag
+    negative: give it an already empty bag. still results in an empty bag
+    boundary: give it the max int value.
+
+bool erase(const key_type &key)
+    positive: give it an item to remove that is in the bag. the item is removed and it returns true
+    negative: give it an item to remove that is in the bag twice. only the first one is removed
+    boundary: give it the max int value.
+
+void insert(const value_type& entry, const key_type& key)
+    positive: give it a 1 to insert. it got inserted into the bag
+    negative: give it values in the incorrect positions
+    boundary: give it the max int value.
+
+void operator +=(const keyed_bag& addend)
+    positive: give it a normal bag, size 1. its one key got added to the other bag
+    negative: add it to an integer. cant add the two values together because they are diff data types
+    boundary: add two bags both of size half the size of the CAPACITY
+
+bool has_key(const key_type& key) const
+    positive: have "five" in the bag. give it "five". returns true
+    negative: give it an integer. needed a string
+    boundary: don't have "six in the bag. give it "six". returns false.
+
+value_type get(const key_type& key) const;
+    positive: give it a key that exists in the bag. returns the data value of the key
+    negative: give it a key that doesnt exist in teh bag. ran into no issues
+    boundary: give it a key that exists at the end of the bag. returns its data value
+
+size_type size( ) const
+    positive: use a bag with 5 items. returns 5
+    negative: give it a bag that doesnt exist
+    boundary: give it an empty bag to see if it was initialized properly. it was
+
+size_type count(const value_type& target) const
+    positive: give it a target that exists once in the bag. returns a 1
+    negative: give it a target of a different value_type. 
+    boundary: give it a target that doesnt exist in the bag. returns a 0
+
+bool hasDuplicateKey(const keyed_bag& otherBag) const
+    positive: give it a bag that has the same values as the original bag. returns true
+    negative: using an original bag with no values in it, give it a bag that doesnt exist. fails
+    boundary: give it a bag that has no values in it. returns false
+
+keyed_bag operator +(const keyed_bag& b1, const keyed_bag& b2)
+    positive: give it two bags of equal size, each less than half of CAPACITY. returns a bag with both items in it
+    negative: add it to an integer. cant add the two values together because they are diff data types
+    boundary: add two bags both of size half the size of the CAPACITY

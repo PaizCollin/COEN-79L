@@ -1,0 +1,87 @@
+Test results for Deque
+
+ROUND 1:
+POSITIVE TESTS:
+1. constructor test
+Result: Works, Deque is created
+2. push back 30 items
+Result: Works, 0-29 inputted, tested by printing
+3. push front 30 items
+Result: Works, 0-29 inputted, tested by printing
+4. iterate from beginning to end
+Result: Works, all items printed in order
+5. pop_back 5 items
+Result: Works, 5 items removed from the front, tested by printing
+6. pop_front 10 items
+Result: Works, 10 items removed from the back, tested by printing
+7. assignment operator 
+Result: Works, d2 successfully copied to d3
+8. copy constructor
+Result: Works, d4 created using d1
+
+NEGATIVE TESTS:
+1. constructor test without specific type
+Result: Fails, can't compile, missing template argument
+2. push back a string into an int deque
+Result: Fails. can't compile incorrrect type
+3. push front a string into an int deque
+Result: Fails. can't compile incorrrect type
+4. pop front of an empty deque
+Result: Assertion fails, the deque is empty
+5. pop back of an empty deque
+Result: Assertion fails, the deque is empty
+6. iterate outside of the deque
+Result: seg fault
+7. assignment operator from a deque of a diff type
+Result: Fails to compile
+8. copy constructor froma deque of a diff type
+Result: Fails to compile
+
+BOUNDARY TESTS:
+1. to ensure reserve is working (25 spots by default: 5 spots in the block array and 5 spots in each block), push_front 20 items
+Result: Works, the items are inserted at the front, meaning the reserve worked
+2. to ensure reserve is working (25 spots by default: 5 spots in the block array and 5 spots in each block), push_back 20 items
+Result: Works, the items are inserted at the back, meaning the reserve worked
+
+ROUND 2: (most results remain the same because they worked appropriately the first time)
+POSITIVE TESTS:
+1. constructor test
+Result: Works, Deque is created
+2. push back 30 items
+Result: Works, 0-29 inputted, tested by printing
+3. push front 30 items
+Result: Works, 0-29 inputted, tested by printing
+4. iterate from beginning to end
+Result: Works, all items printed in order
+5. pop_back 5 items
+Result: Works, 5 items removed from the front, tested by printing
+6. pop_front 10 items
+Result: Works, 10 items removed from the back, tested by printing
+7. assignment operator 
+Result: Works, d2 successfully copied to d3
+8. copy constructor
+Result: Works, d4 created using d1
+
+NEGATIVE TESTS:
+1. constructor test without specific type
+Result: Fails, can't compile, missing template argument
+2. push back a string into an int deque
+Result: Fails. can't compile incorrrect type
+3. push front a string into an int deque
+Result: Fails. can't compile incorrrect type
+4. pop front of an empty deque
+Result: Assertion fails, the deque is empty
+5. pop back of an empty deque
+Result: Assertion fails, the deque is empty
+6. iterate outside of the deque
+Result: seg fault
+7. assignment operator from a deque of a diff type
+Result: Fails to compile
+8. copy constructor froma deque of a diff type
+Result: Fails to compile
+
+BOUNDARY TESTS:
+1. to ensure reserve is working (25 spots by default: 5 spots in the block array and 5 spots in each block), push_front 20 items
+Result: Works, the items are inserted at the front, meaning the reserve worked
+2. to ensure reserve is working (25 spots by default: 5 spots in the block array and 5 spots in each block), push_back 20 items
+Result: Works, the items are inserted at the back, meaning the reserve worked

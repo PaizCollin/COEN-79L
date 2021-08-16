@@ -1,0 +1,17 @@
+s1: 
+s2: Nice to meet you
+s3: Nice to meet you
+*** += operator tests ***
+s1 length: 0
+s1: ~!
+s1 length: 2
+*** [] operator test ***
+s1[0]: ~
+s1[last]: !
+*** = operator test ***
+s2: = Hello
+s2: = World
+a == b :false
+a+b : ab
+Number of L's : 1
+Location of rl in s2: 4

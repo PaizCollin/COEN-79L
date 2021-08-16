@@ -1,0 +1,67 @@
+Testing for Ian's Dynamic Poly 
+(new format because I am still not totally sure as to how this should look)
+(also I used the provided test file and inputted values to test his implementation)
+
+POSITIVE TESTS:
+1. assign_coeff 5x^3
+Report: Works
+2. add_to_coeff 2 to the already defined 5x^3
+Report: Works, becomes 8x^3
+3. eval A at x = 1
+Report: Works, outputs 7 as expected
+4. A + B, after assign_coeff 2x^2 to B
+Report: Works, outputs 8x^3 + 2x^2 as expected
+5. A - B
+Report: Works, outputs 8x^3 - 2x^2 as expected
+6. A * B
+Report: Works, outputs 16x^5 as expected
+7. derivative of A
+Report: Works, outputs 24x^2 as expected
+8. antiderivative of A
+Report: Works, outputs 2x^4
+9. definite_integral of A, 0 to 1
+Report: Works, outputs 2
+10. assign_coeff 4x^2 while 2x^2 already exists in poly B
+Report: Works, outputs 4x^2 as expected
+11. next_term/previous_term for A (after assign_coff 1x^0 and 2x^1) at degree = 1
+Report: Works, 0 & 3, respectively
+12. clear A and B
+Report: Works, both polynomials are set to 0 as expected
+
+NEGATIVE TESTS:
+1. assign_coeff at 30
+Report: Assertion fails as expected, max_deg set to 29
+2. assign_coeff at -5
+Report: Assertion fails as expected, size_t values may not be negative
+3. add_to_coeff at40
+Report: Assertion fails as expected, max_deg set to 29
+4. derivative of an empty poly
+Report: Outputs 0 as expected
+5. eval an empty poly at x = 5
+Report: Outputs 0 as expected
+6. antiderivative of an empty poly
+Report: Outputs 0 as expected
+7. definite_integral from 0 to 0
+Report: Outputs 0 as expected
+8. A + B of two empty polynomials
+Report: Outputs 0 as expected
+9. A - B of two empty polynomials
+Report: Outputs 0 as expected
+10. A * B of two empty polynomials
+Report: Outputs 0 as expected
+
+BOUNDARY TESTS:
+1. assign_coeff to max double (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368)
+Report: Works
+2. assign_coeff to max_double + 1
+Report: Sets it to only the max double
+3. Fill the polynomial from degree 1 to degree 29
+Report: Adds all items from 1 to 29
+4. Assign item with degree 29
+Report: Adds the final poly of the highest possible degree
+5. A + B where coeff of both x^0 is the max double value
+Report: says 'inf', not a definite value
+6. A - B where coeff of both x^0 is the max double value
+Report: 0.0 as expected
+7. A * B where coeff of both x^0 is the max double value
+Report: says 'inf', not a definite value

@@ -1,0 +1,371 @@
+
+Testing Constructor
+
+db0 Initialized
+
+Testing insertion of companies
+================================================================
+
+Testing the insertion of a new company
+
+Apple Inserted in the database
+
+Testing the insertion of a new company
+
+Nvidia Inserted in the database
+
+Printing all companies in the database
+Company List
+- Apple
+- Nvidia
+
+
+
+Testing insertion of products
+================================================================
+
+Testing the insertion of a new product
+
+iPhone X, 1000 Inserted in company Apple
+
+Testing the insertion of a new product
+
+RTX 3090, 1500 Inserted in company Nvidia
+
+Testing the insertion of a new product
+
+RTX 3080, 700 Inserted in company Nvidia
+
+Testing the insertion of a new product
+
+RTX 3070, 500 Inserted in company Nvidia
+
+Printing the list of products in company Apple
+Printing the products of Apple:
+- iPhone X, where the price is $1000
+
+
+Printing the list of products in company Nvidia
+Printing the products of Nvidia:
+- RTX 3090, where the price is $1500
+- RTX 3080, where the price is $700
+- RTX 3070, where the price is $500
+
+
+
+
+Testing deletion of products
+================================================================
+
+Testing the erasure of item RTX 3080 from company Nvidia
+
+RTX 3080 has been erased from the company Nvidia
+
+Printing the list of products in company Nvidia
+Printing the products of Nvidia:
+- RTX 3090, where the price is $1500
+- RTX 3070, where the price is $500
+
+
+
+
+Testing reserve
+================================================================
+
+Testing the insertion of a new company
+
+A Inserted in the database
+
+Testing the insertion of a new company
+
+B Inserted in the database
+
+Testing the insertion of a new company
+
+C Inserted in the database
+
+Testing the insertion of a new company
+
+D Inserted in the database
+
+Testing the insertion of a new company
+
+E Inserted in the database
+
+Testing the insertion of a new company
+
+F Inserted in the database
+
+Testing the insertion of a new company
+
+G Inserted in the database
+
+Testing the insertion of a new company
+
+H Inserted in the database
+
+Testing the insertion of a new company
+
+I Inserted in the database
+
+Testing the insertion of a new company
+
+J Inserted in the database
+
+Testing the insertion of a new company
+
+K Inserted in the database
+
+Testing the insertion of a new company
+
+L Inserted in the database
+
+Testing the insertion of a new company
+
+M Inserted in the database
+
+Testing the insertion of a new company
+
+N Inserted in the database
+
+Testing the insertion of a new company
+
+O Inserted in the database
+
+Testing the insertion of a new company
+
+P Inserted in the database
+
+Testing the insertion of a new company
+
+Q Inserted in the database
+
+Testing the insertion of a new company
+
+R Inserted in the database
+
+Testing the insertion of a new company
+
+S Inserted in the database
+
+Testing the insertion of a new company
+
+T Inserted in the database
+
+Testing the insertion of a new company
+
+U Inserted in the database
+
+Testing the insertion of a new company
+
+V Inserted in the database
+
+Testing the insertion of a new company
+
+W Inserted in the database
+
+Testing the insertion of a new company
+
+X Inserted in the database
+
+Testing the insertion of a new company
+
+Y Inserted in the database
+
+Testing the insertion of a new company
+
+Z Inserted in the database
+
+Printing all companies in the database
+Company List
+- Apple
+- Nvidia
+- A
+- B
+- C
+- D
+- E
+- F
+- G
+- H
+- I
+- J
+- K
+- L
+- M
+- N
+- O
+- P
+- Q
+- R
+- S
+- T
+- U
+- V
+- W
+- X
+- Y
+- Z
+
+
+
+Testing deletion of companies
+================================================================
+
+Testing the erasure of company A from the database
+
+A has been erased from the database
+
+Testing the erasure of company B from the database
+
+B has been erased from the database
+
+Testing the erasure of company C from the database
+
+C has been erased from the database
+
+Testing the erasure of company D from the database
+
+D has been erased from the database
+
+Testing the erasure of company E from the database
+
+E has been erased from the database
+
+Testing the erasure of company F from the database
+
+F has been erased from the database
+
+Testing the erasure of company G from the database
+
+G has been erased from the database
+
+Testing the erasure of company H from the database
+
+H has been erased from the database
+
+Testing the erasure of company I from the database
+
+I has been erased from the database
+
+Testing the erasure of company J from the database
+
+J has been erased from the database
+
+Testing the erasure of company K from the database
+
+K has been erased from the database
+
+Testing the erasure of company L from the database
+
+L has been erased from the database
+
+Testing the erasure of company M from the database
+
+M has been erased from the database
+
+Testing the erasure of company N from the database
+
+N has been erased from the database
+
+Testing the erasure of company O from the database
+
+O has been erased from the database
+
+Testing the erasure of company P from the database
+
+P has been erased from the database
+
+Testing the erasure of company Q from the database
+
+Q has been erased from the database
+
+Testing the erasure of company R from the database
+
+R has been erased from the database
+
+Testing the erasure of company S from the database
+
+S has been erased from the database
+
+Testing the erasure of company T from the database
+
+T has been erased from the database
+
+Testing the erasure of company U from the database
+
+U has been erased from the database
+
+Testing the erasure of company V from the database
+
+V has been erased from the database
+
+Testing the erasure of company W from the database
+
+W has been erased from the database
+
+Testing the erasure of company X from the database
+
+X has been erased from the database
+
+Testing the erasure of company Y from the database
+
+Y has been erased from the database
+
+Testing the erasure of company Z from the database
+
+Z has been erased from the database
+
+Printing all companies in the database
+Company List
+- Apple
+- Nvidia
+
+
+
+Testing invalid insertion of companies
+================================================================
+
+
+
+Testing invalid insertion of products
+================================================================
+
+
+
+Testing invalid deletion of companies
+================================================================
+
+
+
+Testing invalid deletion of products
+================================================================
+
+
+
+Testing the deletion of a non-existent company
+================================================================
+
+Testing the erasure of company AMD from the database
+
+AMD was not found in the database
+
+Printing all companies in the database
+Company List
+- Apple
+- Nvidia
+
+
+
+Testing the deletion of a non-existent product
+================================================================
+
+Testing the erasure of item RTX 3060 Ti from company Nvidia
+
+Either company Nvidia or product RTX 3060 Ti could not be found
+
+Printing the list of products in company Nvidia
+Printing the products of Nvidia:
+- RTX 3090, where the price is $1500
+- RTX 3070, where the price is $500
+

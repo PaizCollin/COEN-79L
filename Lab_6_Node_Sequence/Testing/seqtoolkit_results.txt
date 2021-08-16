@@ -1,0 +1,85 @@
+Test results for sequence implementation and node toolkit functions (I am assuming we only test the ones that were actually implemented by our partner)
+
+SEQUENCE1
+POSITIVE TESTS:
+1. create a sequence
+Report: Works
+2. attach items to the sequence (1,2,4)
+Report: Works
+3. insert item to the sequence (3)
+Report: Works
+4. print the sequence of items (expected: 1,2,3,4)
+Report: Works, prints as expected
+5. start and then check is_item
+Report: Works, an item is detected at the start
+6. advance 3 times (to the last item in the seq) and check is_item
+Report: Works, an item is detected
+7. advance once more and check is_item
+Report: Works, no item is detected, as expected
+8. remove_current from the sequence and check the item first (not on the ends)
+Report: Works, item was removed (checked with print and checked the current item first)
+9. remove_current to the head node and check the item first
+Report: Works, item was removed (checked with print and checked the current item first)
+10. remove_current to the tail node, check the item first, and test end function
+Report: Works, item was removed from the correct location (the end) (checked with print and checked the current item first)
+11. operator =; set seq2 = seq1;
+Report: Works, tested by printing the seq
+12. check size
+Report: returns 2, as expected
+
+NEGATIVE TESTS:
+1. create a sequence using a sequence that doesn't exists
+Report: Fails, as expected
+2. advance through an empty seq
+Report: Fails the assertion, there is no current item
+3. start & end tests
+Report: Passes, but nothing happens
+4. insert a char
+Report: Fails, no matching function call
+5. attach a char
+Report: Fails, no matching function call
+6. operator =; set seq3 equal to a nonexistent sequence
+Report: Fails, the sequence doesn't exists
+7. remove_current
+Report: Fails, there is no item, assertion fails
+
+BOUNDARY TESTS:
+1. insert max double value (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368)
+Report: Works, value is inputted
+2. attach max double value (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368)
+Report: Works, value is inputted
+
+
+NODE1
+POSITIVE TESTS:
+1. list_occurrences 0, with two 0s
+Report: Works, prints 2, as expected
+2. list_insert_at 2 to location 5
+Report: Works, inserts a 2 at the end (location 5)
+3. list_remove_at location 3
+Report: Works, removes item 3, which was a 1
+4. list_remove_dups
+Report: Works, removes the extra 0 and extra 2, as expected
+5. list_occurrences of 0
+Report: Works, there is 1 0, as expected
+6. list_copy_segment
+Report: Works, all nodes are copied between the start to finish, as expected
+7. list_piece
+Report: Works, all but the end are copied, as expected
+8. remove dups after adding another 0
+Report: removes the second 0, tested by printing
+
+NEGATIVE TESTS:
+1. list_occurrences 0, with no nodes
+Report: Passes, but 0
+2. list_insert_at 2 to location 100
+Report: Fails, aborted b/c the assertion fails. position is outside of the parameter of nodes
+3. list_remove_at location 3
+Report: Fails, aborted b/c the assertion fails. position is outside of the parameter of nodes
+4. list_remove_dups
+Report: Passes, but no dups to remove
+5. list_piece
+Report: Passes, but nothing to move over
+6. list_copy_segment between 1 to 4
+Report: Fails, there are no nodes to copy
+

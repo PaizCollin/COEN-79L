@@ -1,0 +1,129 @@
+Test results (I am assuming I only test the implementations done by my lab partner, for the sake of time)
+
+ROUND 1:
+POSITIVE TESTS:
+1. create a database
+Result: Works, db1 created
+2. insert_company 3 companies
+Result: Works, companies inserted
+3. print_companies
+Result: Works, companies are printed
+4. create database from source
+Result: Works, db2 created from db1 (tested by printing)
+5. database =
+Result: Works, db3 is set equal to db1 (tested by printing)
+6. insert_item
+Result: Works, db1, C1 now has product '1' for $1.00
+7. print_items_by_company
+Result: Works, C1 items are printed
+8. erase_item an item from the middle
+Result: Works, item is removed from company C1
+9. erase_item an item from the front (boundary)
+Result: Works, item is removed from comapny C1
+10. erase_item an item from the back (boundary)
+Result: Works, item is removed from company C1
+11. erase_company from the middle
+Result: Works, company C3 is removed from db2
+12. erase_company from the front (boundary)
+Result: Works, comapny C1 is removed from db2
+13. erase_company from the back (boundary)
+Result: Works, company C5 is removed from db2
+14. search_company C1
+Result: Works, company found, location number printed
+
+NEGATIVE TESTS:
+1. database with incorrect argument type
+Result: Fails
+2. database from unknown source
+Result: Fails, database source does not exist
+3. database = from unknown source
+Result: Fails, database source does not exist
+4. print_companies from an empty db7
+Result: Passes, but nothing is printed
+5. print_items_by_company from a company that doesnt exist
+Result: assertion failed. aborted
+6. insert_company with an empty string
+Result: assertion failed. aborted
+7. insert_item with empty item names
+Result: assertion failed, aborted
+8. erase_company that doesnt exist
+Result: Passes, test returns that there was no company to be deleted based on return bool
+9. erase_item that doesnt exist
+Result: Passes, told that there was no item to deleted
+10. erase_item with no company name or product name given
+Result: assertion failed, aborted
+11. search_company of company that doesnt exist
+Result: passes, -1 printed
+12. search_company entry is empty
+Result: assertion failed, aborted
+
+BOUNDARY TESTS:
+1. insert_item with price as max double
+Result: Works, value is inputted
+2. insert_item with price as max double +1
+Result: Passes, but value is only the max double
+(A few others are in the positive tests and labeled)
+
+ROUND 2 (most results remain unchanged):
+POSITIVE TESTS:
+1. create a database
+Result: Works, db1 created
+2. insert_company 3 companies
+Result: Works, companies inserted
+3. print_companies
+Result: Works, companies are printed
+4. create database from source
+Result: Works, db2 created from db1 (tested by printing)
+5. database =
+Result: Works, db3 is set equal to db1 (tested by printing)
+6. insert_item
+Result: Works, db1, C1 now has product '1' for $1.00
+7. print_items_by_company
+Result: Works, C1 items are printed
+8. erase_item an item from the middle
+Result: Works, item is removed from company C1
+9. erase_item an item from the front (boundary)
+Result: Works, item is removed from comapny C1
+10. erase_item an item from the back (boundary)
+Result: Works, item is removed from company C1
+11. erase_company from the middle
+Result: Works, company C3 is removed from db2
+12. erase_company from the front (boundary)
+Result: Works, comapny C1 is removed from db2
+13. erase_company from the back (boundary)
+Result: Works, company C5 is removed from db2
+14. search_company C1
+Result: Works, company found, location number printed
+
+NEGATIVE TESTS:
+1. database with incorrect argument type
+Result: Fails
+2. database from unknown source
+Result: Fails, database source does not exist
+3. database = from unknown source
+Result: Fails, database source does not exist
+4. print_companies from an empty db7
+Result: Passes, but nothing is printed
+5. print_items_by_company from a company that doesnt exist
+Result: assertion failed. aborted
+6. insert_company with an empty string
+Result: assertion failed. aborted
+7. insert_item with empty item names
+Result: assertion failed, aborted
+8. erase_company that doesnt exist
+Result: Passes, test returns that there was no company to be deleted based on return bool
+9. erase_item that doesnt exist
+Result: Passes, told that there was no item to deleted
+10. erase_item with no company name or product name given
+Result: assertion failed, aborted
+11. search_company of company that doesnt exist
+Result: passes, -1 printed
+12. search_company entry is empty
+Result: assertion failed, aborted
+
+BOUNDARY TESTS:
+1. insert_item with price as max double
+Result: Works, value is inputted
+2. insert_item with price as max double +1
+Result: Passes, but value is only the max double
+(A few others are in the positive tests and labeled)

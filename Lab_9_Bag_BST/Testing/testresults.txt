@@ -1,0 +1,90 @@
+Test Results
+
+Round 1:
+POSITIVE TESTS:
+1. constructor
+Result: Works, bag created
+2. insert a few values, and count
+Result: Works, values inserted, tested by counting, count matches up
+3. copy constructor
+Result: Works, b2 is created from b1, tested by count
+4. erase_onse 6 from b1
+Result: Works, 6 is removed, tested by count
+5. erase all 5s from b1
+Result: Works, all 5s are moved, tested by count
+6. = operator
+Result: Works, b3 is set equal to b2
+7. += operator
+Result: Works, b3 appends b1
+8. insert_all from one tree to another
+Result: Works, the tree has been added
+
+
+NEGATIVE TESTS:
+1. constructor with no specified type
+Result: Fails, needs a type else it will not compile
+2. copy constructor of a tree of a diff type
+Result: Fails, needs to be the same type
+3. insert values of a diff type
+Result: Fails, must be the specified type
+4. erase_one 1 from a tree with no 1s
+Result: Passes, but nothing is removes
+5. erase all 1s froma  tree with no 1s
+Result: Passes, but nothing is removed
+6. = operator of a diff type
+Result: Fails, the trees must haev the same type
+7. += operator of a tree of a diff type
+Result: Fails, the trees much have the smae type to appends
+8. insert_all from one tree to another of a diff type
+Result: Fails, the trees much have the smae type to appends
+
+BOUNDARY TESTS:
+1. erase and erase_ one from an empty tree
+Result: Works, but nothing is removed
+2. count of an empty/null tree
+Result: Works, but it is 0
+
+Round 2: (most results remained the same, as it worked properly the first time)
+POSITIVE TESTS:
+1. constructor
+Result: Works, bag created
+2. insert a few values, and count
+Result: Works, values inserted, tested by counting, count matches up
+3. copy constructor
+Result: Works, b2 is created from b1, tested by count
+4. erase_onse 6 from b1
+Result: Works, 6 is removed, tested by count
+5. erase all 5s from b1
+Result: Works, all 5s are moved, tested by count
+6. = operator
+Result: Works, b3 is set equal to b2
+7. += operator
+Result: Works, b3 appends b1
+8. insert_all from one tree to another
+Result: Works, the tree has been added
+
+
+NEGATIVE TESTS:
+1. constructor with no specified type
+Result: Fails, needs a type else it will not compile
+2. copy constructor of a tree of a diff type
+Result: Fails, needs to be the same type
+3. insert values of a diff type
+Result: Fails, must be the specified type
+4. erase_one 1 from a tree with no 1s
+Result: Passes, but nothing is removes
+5. erase all 1s froma  tree with no 1s
+Result: Passes, but nothing is removed
+6. = operator of a diff type
+Result: Fails, the trees must haev the same type
+7. += operator of a tree of a diff type
+Result: Fails, the trees much have the smae type to appends
+8. insert_all from one tree to another of a diff type
+Result: Fails, the trees much have the smae type to appends
+
+BOUNDARY TESTS:
+1. erase and erase_ one from an empty tree
+Result: Works, but nothing is removed
+2. count of an empty/null tree
+Result: Works, but it is 0
+
