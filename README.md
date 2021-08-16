@@ -1,6 +1,6 @@
 COEN 79: Advanced Data Structures & Object-Oriented Programming
 
-Santa Clara University, Farokh Eskafi, Winter 2021
+Santa Clara University, Dr. Farokh Eskafi, Winter 2021
 
 This includes various C++ projects from the lab section of this course. Some files were provided by the professor (Without "My"). My implementations and work are specified in directories that include "My". Directories that include "Ian" were used to create test cases for a partner in the course.
 
