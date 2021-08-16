@@ -1,12 +1,20 @@
 COEN 79: Advanced Data Structures & Object-Oriented Programming
+
 Santa Clara University
+
 Taught by Dr. Darren Atkinson/Dr. Yuhong Liu
+
 Winter 2021
 
+
 This includes various C++ projects from the lab section of this course
+
 Some files were provided by the professor (Without "My")
+
 My implementations and work are specified in directories that include "My"
+
 Directories that include "Ian" were used to create test cases for a partner in the course
+
 
 Lab 1 - Various Programs: Count the number of alphanumeric and nonalphanumeric characters in the user input; print a string and its reverse; delete nonalphanumeric characters in words larger than 10 characters, convert to uppercase and print; user thinks of a number 1-20 and the program attempts to guess it
 
